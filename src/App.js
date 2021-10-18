@@ -3,9 +3,13 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <h2>test</h2>
-    </div>
+    <Router>
+      <Switch>
+        <Route>
+          <Link>home</Link>
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
