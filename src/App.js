@@ -6,7 +6,8 @@ function App() {
     <Router>
       <Switch>
         <Route>
-          <Lin to="/">home</Lin>
+          <Link to="/">home</Link>
+          <Link>test</Link>
         </Route>
       </Switch>
     </Router>
