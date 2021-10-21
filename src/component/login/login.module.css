@@ -1,4 +1,14 @@
+.container {
+  border: 1px solid lightgrey;
+  padding: 50px;
+  background: lightgreen;
+}
+
 .section {
   display: flex;
   flex-direction: column;
+}
+
+.button {
+  cursor: pointer;
 }
