@@ -1,4 +1,6 @@
 import { useHistory } from "react-router-dom";
+import Footer from "../footer/footer";
+import Header from "../header/header";
 import styles from "../login/login.module.css";
 
 function Login({ authService }) {
@@ -8,6 +10,7 @@ function Login({ authService }) {
     history.push({
       pathname: "/main",
     });
+    console.log(userId);
   };
 
   const onLogin = (event) => {
@@ -18,17 +21,16 @@ function Login({ authService }) {
 
   return (
     <div className={styles.container}>
-      <header>
-        <div>logo img</div> {/* 로고 이미지 추가요망 */}
-      </header>
+      <Header />
       <section className={styles.section}>
-        <input type="text" placeholder="아이디" />
-        <input type="text" placeholder="패스워드" />
+        <button className={styles.button} onClick={onLogin}>
+          Google
+        </button>
+        <button className={styles.button} onClick={onLogin}>
+          Github
+        </button>
       </section>
-      <button className={styles.button} onClick={onLogin}>
-        Login
-      </button>
-      <footer>2021. re-member</footer>
+      <Footer />
     </div>
   );
 }

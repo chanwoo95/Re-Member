@@ -1,6 +1,5 @@
 .container {
   border: 1px solid lightgrey;
-  padding: 50px;
   background: lightgreen;
 }
 
@@ -11,4 +10,15 @@
 
 .button {
   cursor: pointer;
+  background-color: antiquewhite;
+  border: none;
+  border-radius: 20px;
+  padding: 0.4em;
+  margin: 0.4em;
+  transition: all 0.2s;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
 }
