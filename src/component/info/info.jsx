@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "./info.module.css";
+import "./info.css";
 
 const Info = (props) => (
-  <div>
-    <i className={`${styles.far fa-smile}`}></i>chanwoo
+  <div className="box">
+    <i className="fas fa-smile"></i>chanwoo
   </div>
 );
 
