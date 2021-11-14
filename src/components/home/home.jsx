@@ -1,7 +1,8 @@
 import React from "react";
+import SideNavigation from "../side-navigation/side-navigation";
 
 const Home = () => {
-  return <div>maindddd</div>;
+  return <div></div>;
 };
 
 export default Home;
