@@ -9,8 +9,10 @@ function Login({ authService }) {
   const goToMain = (userId) => {
     history.push({
       pathname: "/main",
+      state: {
+        id: userId,
+      },
     });
-    console.log(userId);
   };
 
   const onLogin = (event) => {
